@@ -10,8 +10,8 @@ import java.util.function.BinaryOperator;
 public class LambdaTest3 {
     public static void main(String[] args) {
         int delta = -1;
-        //BinaryOperator<Integer> add = (x, y) -> x + y + delta;
-        //add.apply(1, 2);
-        //delta = 2;
+        BinaryOperator<Integer> add = (x, y) -> x + y + delta;
+        add.apply(1, 2);
+        // delta = 2;
     }
 }

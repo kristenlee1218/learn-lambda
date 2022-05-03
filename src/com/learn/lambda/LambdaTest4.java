@@ -9,8 +9,8 @@ import java.util.function.BinaryOperator;
  */
 public class LambdaTest4 {
     public static void main(String[] args) {
-        int delta = -1;
-        //BinaryOperator<Integer> add = (delta, y) -> delta + y + delta;
-        //add.apply(1,2);
+        // int delta = -1;
+        BinaryOperator<Integer> add = (delta, y) -> delta + y + delta;
+        add.apply(1, 2);
     }
 }
